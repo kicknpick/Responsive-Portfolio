@@ -1,0 +1,57 @@
+
+
+
+
+p {
+	font: #777777;
+}
+
+#absoluteBox {
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    float: left;
+    margin-top: 90px;
+    margin-right: 70px;
+    background-color: orange;
+}
+
+#header {
+    text-align: center;
+    margin: 0px;
+    height: 90px;
+    width: 270px;
+    background-color: #40e0d0;
+    position: relative;
+    left: 100px;
+    bottom: 90px;
+}
+
+
+#aboutMe {
+	background-color: #ffffff;
+	position: relative;
+    height: 475px;
+    width: 650px;
+    float: left;
+    margin-left: 155px;
+    margin-top: 60px;
+}
+
+#connect {
+	width: 270px;
+    height: 200px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    position: relative;
+	right: 0px;
+	top: 0px;
+}
+
+
+#footer {
+	background-color: #666666;
+	position: relative;
+	top: 0px;
+
+}
