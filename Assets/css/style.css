@@ -273,8 +273,8 @@ h3 {
    
 
     .aboutMe {
-        width: 50%;
-        height: 650px;
+        width: 40%;
+        height: auto;
         float: left;
         border: #dddddd;
         background-color: #ffffff;
@@ -282,10 +282,16 @@ h3 {
         
     }
 
+    nav {
+        position: static;
+    }
+
     .aboutMeImage {
-        padding: 0px 20px;
-        width: 200px;
-        height: 200px;
+        width: 75%;
+        height: auto;
+        float: none;
+        margin-left: 5px;
+        margin-bottom: 20px;
     }
 
     .aboutMeDes {
@@ -316,7 +322,7 @@ h3 {
     }
 
     .navContainer {
-        width: 100%;
+        
         float: left;
         margin-left: 0px;
         background-color: #ffffff;
@@ -324,9 +330,9 @@ h3 {
     }
 
     .container {
-        width: 100%;
-        margin-left: 75px;
+        width: auto;
         height: 100%;
+        margin-bottom: 30px;
     }
 
     .brand {
@@ -350,6 +356,10 @@ h3 {
         padding: 10px 10px;
         margin: 25px 11px;
     }
+    
+    .portNav {
+        position: static;
+    }
 
     .portfolioContainer {
         width: 45%;
@@ -371,7 +381,7 @@ h3 {
         width: 60px;
         float: left;
         padding: 10px 5px;
-        margin-left: 15px;
+        margin-left: 50px;
         margin-top: 17px;
     }
 
@@ -392,6 +402,18 @@ h3 {
         margin-left: 15px;
         margin-top: 17px;
     }
+
+    .footerheader {
+        position: static;
+    }
+
+    .hrFooter {
+        border-color: #4aaaa5;
+        border-style: solid;
+        border-width: 5px;
+        margin: 0px;
+    }
+
 }
 
 
@@ -399,13 +421,31 @@ h3 {
 
 
 @media (min-width: 641px) and (max-width: 768px) {
-   
+   * {
+    box-sizing: border-box;
+   }
+
+    header {
+        position: static;
+        height: 90px;
+    }
+    
+    nav {
+        position: static;
+
+    }
+
     .navContainer {
-        width: 100%;
+        width: 97%;
         float: left;
         margin-left: 20px;
         background-color: #ffffff;
    }
+
+    .brand h1 {
+        padding: 25px 0px 25px 0px;
+        height: 90px;
+    }
 
     .links a {
         margin-left: 20px;
@@ -420,18 +460,26 @@ h3 {
         margin-right: 20px;
     }
 
+
     .container {
+        width: 100%;
+        height: auto;
+        margin: 3% auto;
+    }
+
+    .aboutMe {
+        margin: 2% 20px;
+        clear: both;
+        float: none;
         width: 95%;
-        margin-left: 20px;
-        margin-top: 0px;
     }
 
     .portfolioContainer {
-        width: 100%;
-        float: left;
+        width: 93%;
         border: #dddddd;
         background-color: #ffffff;
         margin-top: 0px;
+        margin: 0px 3% 3% 3%;
     }
 
     .portfolioContainer h2 {
@@ -440,15 +488,50 @@ h3 {
 
     .portBreak {
         margin: 0px 0px 10px 30px;
+        width: 92%;
+    }
+    
+    .portfolioImage {
+        width: 355px;
+        height: auto;
+        padding: 20px 30px;
+    }
+
+    .contactForm {
+        font-size: 18px;
+    }
+
+    .Name {
+        border-color: lightgray;
+        width: 80%;   
+    }
+
+    .Email {
+        border-color: lightgray;
+        width: 80%;
+    }
+
+    .Message {
+        border-color: lightgray;
+        width: 80%;
+    }
+
+    .aboutMeImage {
+        height: auto;
+        width: 300px;
+    }
+
+    .aboutMeDes {
+        font-size: 18px;
     }
 
     .connectWithMe {
         float: left;
-        height: 150px;
-        width: 90%;
+        height: auto;
+        width: 95%;
         background-color: #ffffff;
-        margin-top: 20px;
-        margin-left: 0px;
+        margin: 3% 0px 3% 20px;
+        padding: 20px 0px;
     }
 
     h3 {
@@ -465,7 +548,7 @@ h3 {
         height: 70px;
         width: 70px;
         float: left;
-        margin: 0px 15px 0px 30px;
+        margin: 0px 5px 0px 30px;
         padding: 0px;
     }
 
@@ -473,7 +556,7 @@ h3 {
         height: 70px;
         width: 70px;
         float: left;
-        margin: 0px 15px;
+        margin: 0px 5px;
         padding: 0px;
     }
 
@@ -481,8 +564,21 @@ h3 {
         height: 70px;
         width: 70px;
         float: left;
-        margin: 0px 15px;
+        margin: 0px 5px;
         padding: 0px;
+    }
+    
+    .hrFooter {
+            border-color: #4aaaa5;
+    position: static;
+    clear: both;
+    border-style: solid;
+    border-width: 5px;
+    margin: 0px;
+    }
+    .footerheader {
+        position: static;
+        height: auto;
     }
 
 }
@@ -493,27 +589,32 @@ h3 {
 
 @media (min-width: 1px) and (max-width: 640px) {
     
+    /** {*/
+        /*box-sizing: border-box;*/
+    /*}*/
 
     header {
-            height: 50px;
             width: 100%;
     }
 
     
     nav {
     width: 100%;
-    position: fixed;
+    position: static;
     height: 50px;
     }
 
-    .nav {
+    .portNav {
         position: static;
+        float: none;
     }
     
+
     .aboutMeDes {
         font-size: 15px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 20px;
     }
 
     .brand {
@@ -525,7 +626,7 @@ h3 {
     
     .brand h1 {
     float: left;
-    width: 92%;
+    width: 100%;
     height: 39px;
     background-color: #4aaaa5;
     color: #ffffff;
@@ -538,8 +639,9 @@ h3 {
         float: none;
         padding: 15px;
         font-size: 14pt;
-        margin-top: 5px;
+        margin: 5px auto;
         background-color: #ffffff;
+        text-align: center;
     }
 
     .links a {
@@ -550,29 +652,32 @@ h3 {
     .navContainer {
         width: 100%;    
         height: 50px;
-        float: left;
-        margin-left: 0px;
+        float: none;
+        margin: 0% 0%;
+        position: static;
 
     }
+    
 
     .container {
+        height: auto;
         width: 100%;
-        height: 100%;
-        float: left;
-        margin-left: 50px;
+        float: none;
+        margin-left: 0px;
     }
 
     .aboutMe {
     width: 80%;
-    height: 410px;
+    height: auto;
     float: left;
     border: #dddddd;
     background-color: #ffffff;
-    margin-top: 60px;
+    margin: 5% 10%;
     }
 
     .aboutMe h2 {
         padding: 10px 0px 0px 20px;
+        font-size: 20px;
     }
 
     .aboutMeBreak {
@@ -588,11 +693,12 @@ h3 {
     }
 
     .connectWithMe {
-    height: 145px;
+    height: 125px;
     width: 80%;
     background-color: #ffffff;
-    margin-top: 20px;
-    margin-left: 0px;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-bottom: 7%;
     float: left;
     }
     
@@ -600,34 +706,29 @@ h3 {
         padding-left: 20px;
         width: 80%;
         text-align: left;
+        font-size: 18px;
     }
 
     .githubIcon {   
-        height: 60px;
-        width: 60px;
-        float: left;
-        padding: 0px 5px;
-        margin-left: 30px;
-        margin-top: 0px;
+        height: auto;
+        width: 40px;
+        padding: 0px 5px 0px 5%;
+        margin: 5px auto;
 
 }
 
     .linkedinIcon {
-    height: 60px;
-    width: 60px;
-    float: left;
-    padding: 0px 5px;
-    margin-left: 30px;
-    margin-top: 0px;
+        height: auto;
+        width: 40px;
+        padding: 0px 5px;
+        margin: 5px auto;
     }
 
     .stackIcon {
-    height: 60px;
-    width: 60px;
-    float: left;
-    padding: 0px 5px;
-    margin-left: 30px;
-    margin-top: 0px;
+        height: auto;
+        width: 40px;
+        padding: 0px 5px;
+        margin: 5px auto;
     }
 
     .contactForm {
@@ -635,42 +736,64 @@ h3 {
         font-size: 16px;
         padding: 20px;
         height: 287px;
-        width: 380px;
+        width: auto;
     }
 
     .Message {
-    width: 80%;
+    width: 97%;
     margin: 10px 0px 20px 0px;
-    padding: 0px;
+    padding: 20px 0px;
+    border-color: lightgray;
+    }
+    
+    .Name {
+        border-color: lightgray;
+        width: 97%;
+    }
+
+    .Email {
+        border-color: lightgray;
+        width: 97%;
     }
 
     .submitButton {
-        width: 25%;
+        width: 80px;
     }
 
     .portfolioContainer {
         width: 80%;
+        float: none;
+        margin: 20px auto;
     }
 
     .portfolioImage {
         width: 80%;
-        padding: 10px 40px;
     }
 
     .portBreak {
         margin: 10px 20px 10px 20px;
     }
 
+    .hrFooter{
+        clear: both;
+        border-color: #4aaaa5;
+        border-style: solid;
+        border-width: 3px;
+        margin: 0px;
+    }
+
     .footercontainer {
-    position: fixed;
+    clear: both;
+    position: static;
     bottom: 0;
     background-color: #666666;
-    height: 15px;
+    height: 50px;
     width: 100%;
     }
     
     .footerheader {
-        height: 50px;
+        padding: 20px 0px;
+        position: static;
         width: 100%;
     }
 
